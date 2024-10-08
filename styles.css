@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+select {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#imageGallery img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#imageGallery img:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.modal img {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
